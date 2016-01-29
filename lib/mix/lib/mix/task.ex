@@ -18,6 +18,13 @@ defmodule Mix.Task do
   The `run/1` function will receive all arguments passed
   to the command line.
 
+  Note that, if you would need to start applications in your mix task, you could
+  use:
+
+    Mix.Task.run("app.start", [])
+
+  For example
+
   ## Attributes
 
   There are a couple attributes available in Mix tasks to
